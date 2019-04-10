@@ -214,3 +214,11 @@ main {
   border: 2px #44633F solid;
   border-radius: 5px;
 }
+/* About Me Box */
+#about {
+  width: 100%;
+  margin: 15px 0;
+  border: 5px #44633F solid;
+  outline: 10px forestgreen solid;
+  text-align: center;
+}
