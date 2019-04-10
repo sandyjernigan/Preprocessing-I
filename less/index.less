@@ -1,7 +1,13 @@
-// 
+// Variables
 @spColor: seagreen;
 @linkColor: darkgreen;
 @hoverColor: palegreen;
+
+// Mixins
+.flexCenter {	
+	display: flex;
+	flex-direction: row;
+}
 
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -62,12 +68,21 @@ html, body {
 	height: 100%;
 }
 
+img {
+	max-width: 100%;
+}
+
+.container {
+	width: 90%;
+}
+
 /* Header Content */
 header {
 	width: 90%;
 	nav {
-		display: flex;
-		flex-direction: row;
+		.flexCenter;
+		align-content: center;
+		margin: auto;
 
 		li {
 			list-style-type: none;
@@ -83,3 +98,6 @@ header {
 
 
 /* Main Content */
+main {
+	width: 90%;
+}
