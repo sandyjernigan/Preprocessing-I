@@ -133,5 +133,21 @@ table {
 html,
 body {
   height: 100%;
-  background-color: red;
 }
+/* Header Content */
+header {
+  width: 90%;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+}
+header nav li {
+  list-style-type: none;
+  margin: 20px;
+}
+header nav a {
+  text-decoration: none;
+  color: darkgreen;
+}
+/* Main Content */
