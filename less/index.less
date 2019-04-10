@@ -7,17 +7,24 @@
 
 // Colors
 
-// Green Based Scheme 
-@Gray-Asparagus: #44633F; // main
-@forestgreen: forestgreen; // highlight
-@darkJungleGreen: #132a13; // darker
-@deepSpaceSparkle: #47646f; // compliment
-@Chestnut: #99412b; // alternate
+	// Green Based Scheme 
+	@Gray-Asparagus: #44633F; // main
+	@forestgreen: forestgreen; // highlight
+	@darkJungleGreen: #132a13; // darker
+	@deepSpaceSparkle: #47646f; // compliment
+	@Chestnut: #99412b; // alternate
 
 // Mixins
 .flexCenter {	
 	display: flex;
 	flex-direction: row;
+}
+
+.sectionBoxes {	
+	width: 100%;
+	margin: 10px 0;
+	border: 5px @mainColor solid;
+	outline: 10px @hlColor solid;
 }
 
 
@@ -83,10 +90,16 @@ img {
 	max-width: 100%;
 }
 
+/* Container */
 .container {
 	border: 1px black solid;
 	margin: 0 auto;
 	width: 90%;
+
+	footer {
+		margin: 20px auto;
+		text-align: center;
+	}
 }
 
 /* Header Content */
@@ -109,18 +122,21 @@ header {
 	}
 }
 
-
 /* Main Container */
 main {
 	margin: auto;
 	width: 80%;
 }
 
+h1, h2, h3, h4, p, a {
+	margin: 10px;
+	color: @mainColor;
+	font-size: 1.5rem;
+}
+
 /* Main Display Box */
 #mainbox {
-	width: 100%;
-	border: 5px @mainColor solid;
-	outline: 10px @hlColor solid;
+	.sectionBoxes;
 	text-align: center;
 
 	div.mainbg {
@@ -139,12 +155,6 @@ main {
 		margin-top: -80px;
 	}
 
-	h1, p, a {
-		margin: 10px;
-		color: @mainColor;
-		font-size: 1.5rem;
-	}
-
 	h1 {
 		font-size: 3rem;
 	}
@@ -159,8 +169,7 @@ main {
 
 	footer {
 		display: flex;
-		justify-content: space-evenly;
-		margin: 15px;
+		justify-content: space-evenly;		
 
 		div {
 			padding: 10px;
@@ -173,11 +182,25 @@ main {
 
 /* About Me Box */
 #about {
-	width: 100%;
-	margin: 15px 0;
-	border: 5px @mainColor solid;
-	outline: 10px @hlColor solid;
-	text-align: center;
+	.sectionBoxes;
 
-	
 }
+
+/* Resume Box */
+#resume {
+	.sectionBoxes;
+
+}
+
+/* Portfolio Box */
+#portfolio {
+	.sectionBoxes;
+
+}
+
+/* Contact Box */
+#contact {
+	.sectionBoxes;
+
+}
+

@@ -2,6 +2,12 @@
   display: flex;
   flex-direction: row;
 }
+.sectionBoxes {
+  width: 100%;
+  margin: 10px 0;
+  border: 5px #44633F solid;
+  outline: 10px forestgreen solid;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -141,10 +147,15 @@ body {
 img {
   max-width: 100%;
 }
+/* Container */
 .container {
   border: 1px black solid;
   margin: 0 auto;
   width: 90%;
+}
+.container footer {
+  margin: 20px auto;
+  text-align: center;
 }
 /* Header Content */
 header nav {
@@ -167,9 +178,20 @@ main {
   margin: auto;
   width: 80%;
 }
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  margin: 10px;
+  color: #44633F;
+  font-size: 1.5rem;
+}
 /* Main Display Box */
 #mainbox {
   width: 100%;
+  margin: 10px 0;
   border: 5px #44633F solid;
   outline: 10px forestgreen solid;
   text-align: center;
@@ -188,13 +210,6 @@ main {
   border-radius: 50%;
   margin-top: -80px;
 }
-#mainbox h1,
-#mainbox p,
-#mainbox a {
-  margin: 10px;
-  color: #44633F;
-  font-size: 1.5rem;
-}
 #mainbox h1 {
   font-size: 3rem;
 }
@@ -207,7 +222,6 @@ main {
 #mainbox footer {
   display: flex;
   justify-content: space-evenly;
-  margin: 15px;
 }
 #mainbox footer div {
   padding: 10px;
@@ -217,8 +231,28 @@ main {
 /* About Me Box */
 #about {
   width: 100%;
-  margin: 15px 0;
+  margin: 10px 0;
   border: 5px #44633F solid;
   outline: 10px forestgreen solid;
-  text-align: center;
+}
+/* Resume Box */
+#resume {
+  width: 100%;
+  margin: 10px 0;
+  border: 5px #44633F solid;
+  outline: 10px forestgreen solid;
+}
+/* Portfolio Box */
+#portfolio {
+  width: 100%;
+  margin: 10px 0;
+  border: 5px #44633F solid;
+  outline: 10px forestgreen solid;
+}
+/* Contact Box */
+#contact {
+  width: 100%;
+  margin: 10px 0;
+  border: 5px #44633F solid;
+  outline: 10px forestgreen solid;
 }
