@@ -160,7 +160,7 @@ header nav li {
 }
 header nav a {
   text-decoration: none;
-  color: darkgreen;
+  color: #44633F;
 }
 /* Main Container */
 main {
@@ -170,8 +170,8 @@ main {
 /* Main Display Box */
 #mainbox {
   width: 100%;
-  border: 5px darkgreen solid;
-  outline: 10px palegreen solid;
+  border: 5px #44633F solid;
+  outline: 10px forestgreen solid;
   text-align: center;
 }
 #mainbox div.mainbg {
@@ -184,12 +184,33 @@ main {
 #mainbox img.portrait {
   width: 200px;
   height: 200px;
-  border: 5px palegreen solid;
+  border: 5px forestgreen solid;
   border-radius: 50%;
   margin-top: -80px;
 }
+#mainbox h1,
+#mainbox p,
+#mainbox a {
+  margin: 10px;
+  color: #44633F;
+  font-size: 1.5rem;
+}
 #mainbox h1 {
   font-size: 3rem;
-  color: darkgreen;
-  margin: 10px;
+}
+#mainbox a {
+  text-decoration: none;
+}
+#mainbox p.title {
+  color: forestgreen;
+}
+#mainbox footer {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 15px;
+}
+#mainbox footer div {
+  padding: 10px;
+  border: 2px #44633F solid;
+  border-radius: 5px;
 }

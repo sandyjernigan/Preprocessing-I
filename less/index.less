@@ -1,7 +1,18 @@
 // Variables
-@spColor: seagreen;
-@mainColor: darkgreen;
-@hoverColor: palegreen;
+@mainColor: @Gray-Asparagus;
+@hlColor: @forestgreen; //highlight Color
+@dkColor: @darkJungleGreen; // darker Color
+@comColor: @deepSpaceSparkle; // compliment Color
+@altColor: @Chestnut; // alternate
+
+// Colors
+
+// Green Based Scheme 
+@Gray-Asparagus: #44633F; // main
+@forestgreen: forestgreen; // highlight
+@darkJungleGreen: #132a13; // darker
+@deepSpaceSparkle: #47646f; // compliment
+@Chestnut: #99412b; // alternate
 
 // Mixins
 .flexCenter {	
@@ -109,7 +120,7 @@ main {
 #mainbox {
 	width: 100%;
 	border: 5px @mainColor solid;
-	outline: 10px @hoverColor solid;
+	outline: 10px @hlColor solid;
 	text-align: center;
 
 	div.mainbg {
@@ -123,16 +134,39 @@ main {
 	img.portrait {
 		width: 200px;
 		height: 200px;
-		border: 5px @hoverColor solid;
+		border: 5px @hlColor solid;
 		border-radius: 50%;
 		margin-top: -80px;
 	}
 
-	h1 {
-		font-size: 3rem;
-		color: @mainColor;
+	h1, p, a {
 		margin: 10px;
+		color: @mainColor;
+		font-size: 1.5rem;
 	}
 
+	h1 {
+		font-size: 3rem;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	p.title {
+		color: @hlColor;		
+	}
+
+	footer {
+		display: flex;
+		justify-content: space-evenly;
+		margin: 15px;
+
+		div {
+			padding: 10px;
+			border: 2px @mainColor solid;
+			border-radius: 5px;
+		}
+	}
 
 }
