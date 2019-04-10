@@ -142,16 +142,16 @@ img {
   max-width: 100%;
 }
 .container {
+  border: 1px black solid;
+  margin: 0 auto;
   width: 90%;
 }
 /* Header Content */
-header {
-  width: 90%;
-}
 header nav {
   display: flex;
   flex-direction: row;
   align-content: center;
+  justify-content: center;
   margin: auto;
 }
 header nav li {
@@ -162,7 +162,34 @@ header nav a {
   text-decoration: none;
   color: darkgreen;
 }
-/* Main Content */
+/* Main Container */
 main {
-  width: 90%;
+  margin: auto;
+  width: 80%;
+}
+/* Main Display Box */
+#mainbox {
+  width: 100%;
+  border: 5px darkgreen solid;
+  outline: 10px palegreen solid;
+  text-align: center;
+}
+#mainbox div.mainbg {
+  width: 100%;
+  height: 200px;
+  background-image: url("../img/black-contemporary-dark-270435.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#mainbox img.portrait {
+  width: 200px;
+  height: 200px;
+  border: 5px palegreen solid;
+  border-radius: 50%;
+  margin-top: -80px;
+}
+#mainbox h1 {
+  font-size: 3rem;
+  color: darkgreen;
+  margin: 10px;
 }
