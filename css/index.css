@@ -309,7 +309,7 @@ button {
 #mainbox footer {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: stretch;
 }
 footer {
   margin: 20px auto;
@@ -338,6 +338,17 @@ footer {
   background-color: FloralWhite;
   border: 5px #212529 solid;
   outline: 10px forestgreen solid;
+}
+#portfolio .row {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  width: 100%;
+  margin: 0 0 15px;
+}
+#portfolio .box {
+  width: 30%;
+  box-shadow: 5px 5px 5px 5px #888888;
 }
 /* Contact Box */
 #contact {
