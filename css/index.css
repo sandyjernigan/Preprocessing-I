@@ -10,14 +10,11 @@
   font-weight: 400;
   src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v8/BngMUXZYTXPIvIBgJJSb6ufN5qA.ttf) format('truetype');
 }
-.flexCenter {
-  display: flex;
-  flex-direction: row;
-}
 .sectionBoxes {
   width: 100%;
   margin: 10px 0;
-  border: 5px #44633F solid;
+  background-color: FloralWhite;
+  border: 5px #212529 solid;
   outline: 10px forestgreen solid;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -154,9 +151,6 @@ table {
 }
 html {
   font-size: 62.5%;
-}
-html,
-body {
   font-family: 'Roboto Slab', serif;
   height: 100%;
 }
@@ -189,25 +183,61 @@ img {
 }
 /* Container */
 .container {
-  border: 1px black solid;
-  margin: 0 auto;
-  width: 90%;
+  color: #132a13;
+  background: linear-gradient(-45deg, #132a13, forestgreen, #44633F, #47646f);
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 /* Header Content */
 header nav {
   display: flex;
-  flex-direction: row;
-  align-content: center;
   justify-content: center;
+  align-items: center;
   margin: auto;
-}
-header nav li {
-  list-style-type: none;
-  margin: 20px;
 }
 header nav a {
   text-decoration: none;
-  color: #44633F;
+  color: forestgreen;
+  margin: 20px;
+  font-size: 2rem;
+  text-shadow: 1px 1px 5px black, 0 0 25px #132a13, 0 0 5px #44633F;
+}
+header nav a:hover {
+  color: FloralWhite;
 }
 /* Main Container */
 main {
@@ -218,17 +248,29 @@ h1,
 h2,
 h3,
 h4,
-p,
-a {
+p {
   margin: 10px;
   color: #44633F;
-  font-size: 1.5rem;
+  font-size: 2rem;
+}
+button {
+  color: white;
+  width: 240px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 0 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 2px silver;
+  background-color: #132a13;
 }
 /* Main Display Box */
 #mainbox {
   width: 100%;
   margin: 10px 0;
-  border: 5px #44633F solid;
+  background-color: FloralWhite;
+  border: 5px #212529 solid;
   outline: 10px forestgreen solid;
   text-align: center;
 }
@@ -249,20 +291,25 @@ a {
 #mainbox h1 {
   font-size: 3rem;
 }
+#mainbox i {
+  color: #44633F;
+  font-size: 4rem;
+  margin: 0 10px;
+}
 #mainbox a {
+  color: FloralWhite;
   text-decoration: none;
+}
+#mainbox a:hover {
+  color: forestgreen;
 }
 #mainbox p.title {
   color: forestgreen;
 }
 #mainbox footer {
   display: flex;
-  justify-content: space-evenly;
-}
-#mainbox footer div {
-  padding: 10px;
-  border: 2px #44633F solid;
-  border-radius: 5px;
+  justify-content: center;
+  align-items: flex-start;
 }
 footer {
   margin: 20px auto;
@@ -272,27 +319,31 @@ footer {
 #about {
   width: 100%;
   margin: 10px 0;
-  border: 5px #44633F solid;
+  background-color: FloralWhite;
+  border: 5px #212529 solid;
   outline: 10px forestgreen solid;
 }
 /* Resume Box */
 #resume {
   width: 100%;
   margin: 10px 0;
-  border: 5px #44633F solid;
+  background-color: FloralWhite;
+  border: 5px #212529 solid;
   outline: 10px forestgreen solid;
 }
 /* Portfolio Box */
 #portfolio {
   width: 100%;
   margin: 10px 0;
-  border: 5px #44633F solid;
+  background-color: FloralWhite;
+  border: 5px #212529 solid;
   outline: 10px forestgreen solid;
 }
 /* Contact Box */
 #contact {
   width: 100%;
   margin: 10px 0;
-  border: 5px #44633F solid;
+  background-color: FloralWhite;
+  border: 5px #212529 solid;
   outline: 10px forestgreen solid;
 }

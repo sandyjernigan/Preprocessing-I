@@ -18,10 +18,10 @@
   <!-- Header <h1>My Resume</h1> -->
   <header>
     <nav>
-      <li><a href="#about"><i class="fas fa-user-circle"></i> About</a></li>
-      <li><a href="#resume"><i class="fas fa-file-alt"></i> Resume</a></li>
-      <li><a href="#portfolio"><i class="fas fa-code"></i> Portfolio</a></li>
-      <li><a href="#contact"><i class="fas fa-id-card"></i> Contact</a></li>
+      <a href="#about"><i class="fas fa-user-circle"></i> About</a>
+      <a href="#resume"><i class="fas fa-file-alt"></i> Resume</a>
+      <a href="#portfolio"><i class="fas fa-code"></i> Portfolio</a>
+      <a href="#contact"><i class="fas fa-id-card"></i> Contact</a>
     </nav>
   </header>
 
@@ -41,8 +41,8 @@
 
       <!-- Footer for Main Display Box -->
       <footer>
-        <div><a href="">Download Resume</a></div>
-        <div><a href="#contact">Contact Me</a></div>
+        <button><a href="">Download Resume</a></button>
+        <button><a href="#contact">Contact Me</a></button>
       </footer>
     </section>
 
@@ -135,25 +135,60 @@
     </section>
 
     <!-- Portfolio Box -->
-    <section id="portfolio">
-      <h2>Content to come.</h2>
-      <p>Content to come. At vero eos et accusamus et iusto odio dignissimos ducimus 
-          qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores 
-          et quas molestias excepturi sint occaecati cupiditate non provident, 
-          similique sunt in culpa qui officia deserunt mollitia animi, id est laborum 
-          et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
-      </p>
+      <section id="portfolio">
+      <div class="wrapper">
+        <header>
+          <h3>Here’s some stuff I made recently.</h3>
+          <p>Feedback is always welcome.</p>
+        </header>
+        <div class="row">
+          <div class="contentbox">
+            <article class="box">
+              <a href="#"><img src="img/ws_greatidea.PNG" alt="Great Idea Website" /></a>
+              <h3><a href="#">Great Idea</a></h3>
+              <p>Web Design project at Lambda School. Responsive HTML and CSS.</p>
+            </article>
+          </div>
+          <div class="contentbox">
+            <article class="box">
+              <a href="#"><img src="img/ws_family.PNG" alt="My Family page" /></a>
+              <h3><a href="#">My Family page</a></h3>
+              <p>Personal Page to share photos with my family.</p>
+            </article>
+          </div>
+          <div class="contentbox">
+            <article class="box">
+              <a href="#"><img src="img/ws_biblekjv.PNG" alt="BibleKJV" /></a>
+              <h3><a href="http://www.biblekjv.net/">BibleKJV</a></h3>
+              <p>Bible KJV website. This is an old website created as a hobby.</p>
+            </article>
+          </div>
+        </div>
+      </div>		
     </section>
 
     <!-- Contact Box -->
     <section id="contact">
-      <h2>Content to come.</h2>
-      <p>Content to come. At vero eos et accusamus et iusto odio dignissimos ducimus 
-          qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores 
-          et quas molestias excepturi sint occaecati cupiditate non provident, 
-          similique sunt in culpa qui officia deserunt mollitia animi, id est laborum 
-          et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
-      </p>
+      <div class="wrapper">
+        <header>
+          <h3>Have me make stuff for you.</h3>
+          <p>Feedback is always welcome!</p>
+        </header>
+        <div class="row">
+          <form method="post" action="#">
+            <div class="row">
+              <input type="text" name="name" id="name" placeholder="Name" />
+              <input type="text" name="email" id="email" placeholder="Email" />
+              <input type="text" name="subject" id="subject" placeholder="Subject" />
+              <textarea name="message" id="message" placeholder="Message"></textarea>
+              <ul class="actions">
+                <li><input type="submit" value="Send Message" /></li>
+                <li><input type="reset" value="Clear Form" class="alt" /></li>
+              </ul>
+            </div>
+          </form>
+        </div>
+      </div>
     </section>
   </main>
   <footer>

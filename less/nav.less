@@ -1,19 +1,19 @@
 /* Header Content */
 header {
 	nav {
-		.flexCenter;
-		align-content: center;
-		justify-content: center;
+		.flexBox(center, center);
 		margin: auto;
-
-		li {
-			list-style-type: none;
-			margin: 20px;	
-		}
 
 		a {
 			text-decoration: none;
-			color: @mainColor;
+			color: @hlColor;
+			margin: 20px;
+			font-size: 2rem;
+            text-shadow: 1px 1px 5px black, 0 0 25px @dkColor, 0 0 5px @mainColor;
+
+            &:hover {
+                color: @boxBGColor;
+            }
 		}
 	}
 }
