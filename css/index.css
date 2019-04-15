@@ -1,1 +1,382 @@
-/* Compile your LESS file! */
+@font-face {
+  font-family: 'Lemon';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lemon Regular'), local('Lemon-Regular'), url(https://fonts.gstatic.com/s/lemon/v7/HI_EiYEVKqRMq3jGQ5E.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v8/BngMUXZYTXPIvIBgJJSb6ufN5qA.ttf) format('truetype');
+}
+.sectionBoxes {
+  width: 100%;
+  margin: 10px 0;
+  background-color: FloralWhite;
+  border: 5px #212529 solid;
+  outline: 10px forestgreen solid;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto Slab', serif;
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Lemon', cursive;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* Container */
+.container {
+  color: #132a13;
+  background: linear-gradient(-45deg, #132a13, forestgreen, #44633F, #47646f);
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* Header Content */
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+header nav a {
+  text-decoration: none;
+  color: forestgreen;
+  margin: 20px;
+  font-size: 2rem;
+  text-shadow: 1px 1px 5px black, 0 0 25px #132a13, 0 0 5px #44633F;
+}
+header nav a:hover {
+  color: FloralWhite;
+}
+/* Main Container */
+main {
+  margin: auto;
+  width: 80%;
+  max-width: 800px;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 10px;
+  color: #44633F;
+  font-size: 2rem;
+}
+button {
+  color: white;
+  width: 240px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 0 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 2px silver;
+  background-color: #132a13;
+}
+/* Main Display Box */
+#mainbox {
+  width: 100%;
+  margin: 10px 0;
+  background-color: FloralWhite;
+  border: 5px #212529 solid;
+  outline: 10px forestgreen solid;
+  text-align: center;
+}
+#mainbox div.mainbg {
+  width: 100%;
+  height: 200px;
+  background-image: url("../img/black-contemporary-dark-270435.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#mainbox img.portrait {
+  width: 200px;
+  height: 200px;
+  border: 5px forestgreen solid;
+  border-radius: 50%;
+  margin-top: -80px;
+}
+#mainbox h1 {
+  font-size: 3rem;
+}
+#mainbox i {
+  color: #44633F;
+  font-size: 4rem;
+  margin: 0 10px;
+}
+#mainbox a {
+  color: FloralWhite;
+  text-decoration: none;
+}
+#mainbox a:hover {
+  color: forestgreen;
+}
+#mainbox p.title {
+  color: forestgreen;
+}
+#mainbox footer {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+footer {
+  margin: 20px auto;
+  text-align: center;
+}
+/* About Me Box */
+#about {
+  width: 100%;
+  margin: 10px 0;
+  background-color: FloralWhite;
+  border: 5px #212529 solid;
+  outline: 10px forestgreen solid;
+}
+/* Resume Box */
+#resume {
+  width: 100%;
+  margin: 10px 0;
+  background-color: FloralWhite;
+  border: 5px #212529 solid;
+  outline: 10px forestgreen solid;
+}
+/* Portfolio Box */
+#portfolio {
+  width: 100%;
+  margin: 10px 0;
+  background-color: FloralWhite;
+  border: 5px #212529 solid;
+  outline: 10px forestgreen solid;
+}
+#portfolio .row {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  width: 100%;
+  margin: 0 0 15px;
+}
+#portfolio .box {
+  width: 30%;
+  box-shadow: 5px 5px 5px 5px #888888;
+}
+#portfolio .box img {
+  width: 96%;
+  margin: 2%;
+  box-shadow: 1px 1px 1px 1px silver;
+}
+/* Contact Box */
+#contact {
+  width: 100%;
+  margin: 10px 0;
+  background-color: FloralWhite;
+  border: 5px #212529 solid;
+  outline: 10px forestgreen solid;
+}
+#contact .form {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+#contact .row {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  width: 100%;
+  margin: 0 0 15px;
+  border: 1px solid black;
+}
+#contact input {
+  margin: 5px;
+}

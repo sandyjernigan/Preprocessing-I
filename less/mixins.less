@@ -1,0 +1,28 @@
+// Mixins
+
+.flexBox(@justify: center, @align: stretch) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.sectionBoxes {	
+	width: 100%;
+	margin: 10px 0;
+    background-color: @boxBGColor;
+	border: 5px @bgColor solid;
+	outline: 10px @hlColor solid;
+}
+
+.btn(@button-bg: @dkColor, @textColor: white, @shadowColor: silver) {
+    color: @textColor;
+    width: 240px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 0 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 2px @shadowColor;
+    background-color: @button-bg;
+  }
