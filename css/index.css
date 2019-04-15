@@ -364,3 +364,19 @@ footer {
   border: 5px #212529 solid;
   outline: 10px forestgreen solid;
 }
+#contact .form {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+#contact .row {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  width: 100%;
+  margin: 0 0 15px;
+  border: 1px solid black;
+}
+#contact input {
+  margin: 5px;
+}
