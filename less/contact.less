@@ -2,19 +2,51 @@
 #contact {
 	.sectionBoxes;
 
-	.form {
+	.formWrapper {
 		.flexBox(center);
+		padding-bottom: 10px;
+
+		// form {
+			// border-radius: 10px;
+			// background-color: @shadowColor;
+		// }
 	}
 	
 	.row {
-		.flexBox(space-around);
+		.flexBox(center);
 		width: 100%;
-		margin: 0 0 15px;
-		border: 1px solid black;
+		max-width: 600px;
 	}
 
-	input {
-		margin: 5px;
+	input, textarea {
+		margin: 5px 10px;
+		padding: 12px 20px;
+		width: 100%;
+		border-radius: 4px;
+	}
+
+	input[type=text], textarea {
+		display: inline-block;
+		border: 1px solid @shadowColor;
+	  }
+	
+	input[type=submit], [type=reset] {
+		background-color: @hlColor;
+		color: @boxBGColor;
+		border: none;
+		cursor: pointer;
+			
+			&:hover {
+				background-color: @mainColor;
+				}
+	}
+	
+	ul {
+		.flexBox(space-around);
+		
+		li {
+			margin: 0 20px;
+		}
 	}
 
 }

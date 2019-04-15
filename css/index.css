@@ -347,6 +347,11 @@ footer {
   width: 100%;
   margin: 0 0 15px;
 }
+@media (max-width: 700px) {
+  #portfolio .row {
+    display: block;
+  }
+}
 #portfolio .box {
   width: 30%;
   box-shadow: 5px 5px 5px 5px #888888;
@@ -356,6 +361,12 @@ footer {
   margin: 2%;
   box-shadow: 1px 1px 1px 1px silver;
 }
+@media (max-width: 700px) {
+  #portfolio .box {
+    width: 95%;
+    margin: 0 2% 4%;
+  }
+}
 /* Contact Box */
 #contact {
   width: 100%;
@@ -364,19 +375,47 @@ footer {
   border: 5px #212529 solid;
   outline: 10px forestgreen solid;
 }
-#contact .form {
+#contact .formWrapper {
   display: flex;
   justify-content: center;
   align-items: stretch;
+  padding-bottom: 10px;
 }
 #contact .row {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: stretch;
   width: 100%;
-  margin: 0 0 15px;
-  border: 1px solid black;
+  max-width: 600px;
 }
-#contact input {
-  margin: 5px;
+#contact input,
+#contact textarea {
+  margin: 5px 10px;
+  padding: 12px 20px;
+  width: 100%;
+  border-radius: 4px;
+}
+#contact input[type=text],
+#contact textarea {
+  display: inline-block;
+  border: 1px solid silver;
+}
+#contact input[type=submit],
+#contact [type=reset] {
+  background-color: forestgreen;
+  color: FloralWhite;
+  border: none;
+  cursor: pointer;
+}
+#contact input[type=submit]:hover,
+#contact [type=reset]:hover {
+  background-color: #44633F;
+}
+#contact ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+#contact ul li {
+  margin: 0 20px;
 }

@@ -6,16 +6,25 @@
 		.flexBox(space-around);
 		width: 100%;
 		margin: 0 0 15px;
+
+		@media @tablet {
+			display: block;
+		}
 	}
 
 	.box {
 		width: 30%;
-		box-shadow: 5px 5px 5px 5px #888888;
+		box-shadow: 5px 5px 5px 5px @darkShadowColor;
 
 		img {
 			width: 96%;
 			margin: 2%;
-			box-shadow: 1px 1px 1px 1px silver;
+			box-shadow: 1px 1px 1px 1px @shadowColor;
+		}
+
+		@media @tablet {
+			width: 95%;
+			margin: 0 2% 4%;
 		}
 	}
 
